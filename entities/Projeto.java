@@ -42,10 +42,12 @@ public class Projeto {
 			System.out.println();
 			System.out.println("Projeto: " + this.nome + " não está vinculado em nenhuma contratação!");
 		} else {
-			System.out.println();
-			System.out.println("Projeto: " + this.nome);
+			System.out.println("***Contratações***");
+			System.out.println("Projeto:");
+			System.out.println("\t" + this.nome);
+			System.out.println("Funcionarios(s):");
 			for(Contratacao c : listaContratacao) {
-				System.out.println("\tFuncionario(s): " + c.getFuncionario().getNome()
+				System.out.println("\t" + c.getFuncionario().getNome()
 						+ "[Status: " + c.getStatus() + "]");
 			}
 		}
